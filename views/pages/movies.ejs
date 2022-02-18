@@ -1,0 +1,38 @@
+<%- include('../partials/head') %>
+<body>
+    <table style="width:25%">
+        <thead>
+            <tr> 
+                <td><h1>Movies Name</h1 </td>
+                     <br>
+                <td><h1>Year</h1></td>
+            </tr>
+        </thead>
+        <tbody>
+            <% movies.forEach((movies)=> { %>
+            <tr>
+                <td><h3><%= movies.title %></h3></td> 
+                <td><h3><%= movies.year %></h3></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+                                                                                                                                                                                                                                                      </ul>
+                                                                                                                                                                                                                                                    </body>
+<%- include('../partials/footer') %>
+
+
+<!--
+Commands to github to save/push your data
+
+1) on cmd/terminal, goto to folder where this project is
+// Go or Create to the branch
+2) git add .    // Add all files to the local repo
+3) git commit -m "Write comment"  // Tells what are the changes in short
+
+
+4) git push origin/branchname    // push the commit to the server
+
+
+
+-->
